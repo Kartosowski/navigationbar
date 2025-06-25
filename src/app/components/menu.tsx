@@ -25,6 +25,7 @@ export function Navigations({
     NavigationBody,
     position,
     className,
+    current_navigation,
 }: {
     children: React.ReactNode;
     NavigationButtons: boolean;
@@ -33,9 +34,10 @@ export function Navigations({
     NavigationBody: boolean;
     position: { x: number, y: number }
     className?: string;
+    current_navigation?: string;
 }) {
     return (
-        <div>
+        <div current_navigation={current_navigation}>
             <motion.div
                 onHoverStart={() => {
                     SetNavigationButtons(false);

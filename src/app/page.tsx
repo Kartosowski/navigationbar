@@ -21,7 +21,7 @@ export default function Page() {
           <NavigationButton className="bg-red-400" setNavigation={setNavigation} setNavigationText={setNavigationText} text="⭐ Star the project!" id="2" setPosition={setPosition} />
         </NavigationsButtons>
         
-        <Navigations position={position} NavigationBody={navigationBodyOpen} NavigationButtons={navigationButtonsOpen} SetNavigationButtons={setNavigationButtonsOpen} SetNavigationBodyOpen={setNavigationBodyOpen}>
+        <Navigations current_navigation={navigationText} position={position} NavigationBody={navigationBodyOpen} NavigationButtons={navigationButtonsOpen} SetNavigationButtons={setNavigationButtonsOpen} SetNavigationBodyOpen={setNavigationBodyOpen}>
           <Navigation navigation={navigation} id="1">
             <div className="p-5">
               <h1 className="font-bold font-mono">This example of using my Navigation Bar</h1>
