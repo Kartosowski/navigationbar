@@ -18,6 +18,13 @@ You can dynamically display content depending on which button the user clicks.
 Here’s how the component works:
 
 ```tsx
+  const [navigationButtonsOpen, setNavigationButtonsOpen] = useState(false);
+  const [navigationBodyOpen, setNavigationBodyOpen] = useState(false);
+  const [navigation, setNavigation] = useState("");
+  const [, setNavigationText] = useState("");
+  const [position, setPosition] = useState<{ x: number, y: number }>({ x: 0, y: 0 });
+
+
 <Menu className="absolute">
   <NavigationsButtons
     className="ring-neutral-600"
