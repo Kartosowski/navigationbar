@@ -1,4 +1,5 @@
 # 🧭 NavigationBar
+https://github.com/user-attachments/assets/43fac1f1-4c7f-4486-b23d-46dceecb2729
 
 A simple, fun, and open-source navigation component built with **React (Next.js)** and **Tailwind CSS**.
 
