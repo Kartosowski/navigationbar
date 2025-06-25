@@ -73,7 +73,6 @@ The `id` you assign to a `<NavigationButton />` must match the `id` of the corre
 ## 💡 To Do / Ideas
 
 - Make it responsive 📱
-- Add transitions between views
 - Maybe publish it as a standalone package?
 - Clean up the code structure
 
