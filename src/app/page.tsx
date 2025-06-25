@@ -8,7 +8,7 @@ export default function Page() {
   const [navigationButtonsOpen, setNavigationButtonsOpen] = useState(false);
   const [navigationBodyOpen, setNavigationBodyOpen] = useState(false);
   const [navigation, setNavigation] = useState("");
-  const [navigationText, setNavigationText] = useState("");
+  const [, setNavigationText] = useState("");
   const [position, setPosition] = useState<{ x: number, y: number }>({ x: 0, y: 0 });
 
 
@@ -16,12 +16,12 @@ export default function Page() {
     <div>
       <Menu className="absolute ">
         
-        <NavigationsButtons className="ring-1 ring-neutral-600" SetNavigationButtons={setNavigationButtonsOpen} setNavigationBodyOpen={setNavigationBodyOpen}>
+        <NavigationsButtons className="ring-neutral-600" SetNavigationButtons={setNavigationButtonsOpen} setNavigationBodyOpen={setNavigationBodyOpen}>
           <NavigationButton setNavigation={setNavigation} setNavigationText={setNavigationText} text="Check this out!" id="1" setPosition={setPosition} />
           <NavigationButton className="bg-red-400" setNavigation={setNavigation} setNavigationText={setNavigationText} text="⭐ Star the project!" id="2" setPosition={setPosition} />
         </NavigationsButtons>
         
-        <Navigations current_navigation={navigationText} position={position} NavigationBody={navigationBodyOpen} NavigationButtons={navigationButtonsOpen} SetNavigationButtons={setNavigationButtonsOpen} SetNavigationBodyOpen={setNavigationBodyOpen}>
+        <Navigations position={position} NavigationBody={navigationBodyOpen} NavigationButtons={navigationButtonsOpen} SetNavigationButtons={setNavigationButtonsOpen} SetNavigationBodyOpen={setNavigationBodyOpen}>
           <Navigation navigation={navigation} id="1">
             <div className="p-5">
               <h1 className="font-bold font-mono">This example of using my Navigation Bar</h1>
