@@ -4,6 +4,7 @@
 https://github.com/user-attachments/assets/43fac1f1-4c7f-4486-b23d-46dceecb2729
 
 (video it's laggy sorry for that!)
+
 Check yourself here: https://navigationbar-p2xe.vercel.app/
 
 A simple navigation component built with **React (Next.js)** and **Tailwind CSS**.  
